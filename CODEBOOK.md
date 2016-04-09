@@ -1,4 +1,4 @@
-Code Book
+# Code Book
 
 This code book documents the process of ETL (Extract, Transform and Load) applied on data collected from the accelerometers from the Samsung Galaxy S smartphone. Data is obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip (in a ZIP file)
 
