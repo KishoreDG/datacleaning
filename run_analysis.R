@@ -16,15 +16,15 @@ run_analysis <- function(){
   Y_test_table = read.table("./UCI HAR Dataset/test/Y_test.txt")
   
   # LOADING OF TRAINING DATA
-  subject_train_table = read.table("UCI HAR Dataset/train/subject_train.txt")
-  X_train_table = read.table("UCI HAR Dataset/train/X_train.txt")
-  Y_train_table = read.table("UCI HAR Dataset/train/Y_train.txt")
+  subject_train_table = read.table("./UCI HAR Dataset/train/subject_train.txt")
+  X_train_table = read.table("./UCI HAR Dataset/train/X_train.txt")
+  Y_train_table = read.table("./UCI HAR Dataset/train/Y_train.txt")
   
   # LOADING OF FEATURES and ACTIVITIES
   
-  features_table <- read.table("UCI HAR Dataset/features.txt", col.names=c("fId", "fName"))
+  features_table <- read.table("./UCI HAR Dataset/features.txt", col.names=c("fId", "fName"))
   
-  activities_table <- read.table("UCI HAR Dataset/activity_labels.txt", col.names=c("aId", "aName"))
+  activities_table <- read.table("./UCI HAR Dataset/activity_labels.txt", col.names=c("aId", "aName"))
   
   # CLEAN UP: Some Activity Labels have _ (under score) in them so using gsub to remove it
   activities_table$aName <- gsub("_", "", as.character(activities_table$aName))
@@ -35,9 +35,6 @@ run_analysis <- function(){
   
   reqFeatures <- grep("-mean\\(\\)|-std\\(\\)", features_table$fName)
   
-  
-  
-    
 }
 
 
