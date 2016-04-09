@@ -57,6 +57,6 @@ run_analysis <- function(){
   library(data.table)
   dataTable <- data.table(merged_data)
   dataProcessed <- dataTable[, lapply(.SD, mean), by=c("subjectId", "activity")]
-  write.table(dataProcessed, "tidy_data_processed.txt")
+  write.table(dataProcessed, "tidy_data_processed.txt",row.name=FALSE)
   
 }
