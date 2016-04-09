@@ -1,6 +1,4 @@
-# datacleaning
-
-Getting and Cleaning Data Assignment Work
+# Getting and Cleaning Data Assignment
 
 R and supporting Tools Used:
 OS: Windows 10 Pro 
@@ -25,7 +23,7 @@ Please find the instruction on how to get the code and run it locally:
 
 3. Launch RStudio. Make sure that working directory is set. In RStudio, you can use this option under "Session" menu.
    Make sure that you are pointing to the right folder where "run_analysis.R" file is located. When you Fork it and
-   Clone it, you should have folder on your PC/Mac. ** I Used Git HUB UI for Cloning"
+   Clone it, you should have folder on your PC/Mac. ** I Used Git UI for Cloning"
 
 4. Step 3 is very important. Next step is to initialize the run_analysis.R file in RStudio
    source("run_analysis.R")
